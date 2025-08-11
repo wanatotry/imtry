@@ -1,0 +1,100 @@
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.placeholder {
+  background-color: #ffffff; /* Білий фон */
+  padding: 4rem 0;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder h1 {
+  color: #000000; /* Чорний */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.placeholder p {
+  color: #333333; /* Темно-сірий */
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: #40c4ff; /* Блакитний */
+  color: #ffffff; /* Білий */
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #0288d1; /* Темніший блакитний */
+}
+
+/* Адаптивні стилі для сторінки-заглушки */
+
+/* Планшети (768px - 1024px) */
+@media (max-width: 1024px) {
+  .placeholder h1 {
+    font-size: 2rem;
+  }
+
+  .placeholder p {
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Мобільні пристрої (до 768px) */
+@media (max-width: 768px) {
+  .placeholder {
+    padding: 2rem 0;
+    min-height: 50vh;
+  }
+
+  .placeholder h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .placeholder p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .ctaButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Дуже малі екрани (до 480px) */
+@media (max-width: 480px) {
+  .placeholder h1 {
+    font-size: 1.5rem;
+  }
+
+  .placeholder p {
+    font-size: 0.8rem;
+  }
+
+  .ctaButton {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.75rem;
+  }
+}

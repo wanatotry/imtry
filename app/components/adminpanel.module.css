@@ -1,0 +1,263 @@
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.adminPanel {
+  background-color: #ffffff; /* Білий фон */
+  padding: 4rem 0;
+  min-height: 60vh;
+}
+
+.adminPanel h1 {
+  color: #000000; /* Чорний */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.loginForm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  color: #333333; /* Темно-сірий */
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.formInput {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #bbbbbb; /* Сірий */
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff; /* Білий */
+  color: #333333; /* Темно-сірий для тексту */
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.formInput::placeholder {
+  color: #bbbbbb; /* Сірий для плейсхолдера */
+  opacity: 1;
+}
+
+.formInput:focus {
+  border-color: #40c4ff; /* Блакитний */
+  color: #333333; /* Темно-сірий */
+  outline: none;
+}
+
+.submitButton {
+  display: inline-block;
+  background-color: #40c4ff; /* Блакитний */
+  color: #ffffff; /* Білий */
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0288d1; /* Темніший блакитний */
+}
+
+.messagesSection {
+  background: #f5f5f5; /* Світло-сірий */
+  border: 1px solid #bbbbbb; /* Сірий */
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.messagesSection h2 {
+  color: #000000; /* Чорний */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.messagesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.messageCard {
+  background: #ffffff; /* Білий */
+  border: 1px solid #bbbbbb; /* Сірий */
+  border-radius: 5px;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.messageCard:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.messageCard p {
+  color: #333333; /* Темно-сірий */
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.error {
+  color: #ff4d4f; /* Червоний */
+  font-size: 1rem;
+  text-align: center;
+}
+
+.backButton {
+  display: inline-block;
+  background-color: #40c4ff; /* Блакитний */
+  color: #ffffff; /* Білий */
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #0288d1; /* Темніший блакитний */
+}
+.deleteButton {
+  background-color: #ff4d4f;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.deleteButton:hover {
+  background-color: #d32f2f;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.tab {
+  padding: 0.5rem 1rem;
+  background: #bbbbbb;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.activeTab {
+  background: #40c4ff;
+  color: #ffffff;
+}
+
+/* Адаптивні стилі для адмін-панелі */
+
+/* Планшети (768px - 1024px) */
+@media (max-width: 1024px) {
+  .adminPanel h1 {
+    font-size: 2rem;
+  }
+
+  .messagesSection {
+    padding: 1rem;
+  }
+
+  .messagesSection h2 {
+    font-size: 1.3rem;
+  }
+
+  .messagesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formInput {
+    font-size: 0.9rem;
+    color: #333333;
+  }
+
+  .submitButton,
+  .backButton {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Мобільні пристрої (до 768px) */
+@media (max-width: 768px) {
+  .adminPanel {
+    padding: 2rem 0;
+  }
+
+  .adminPanel h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .loginForm {
+    max-width: 100%;
+  }
+
+  .messagesSection {
+    padding: 0.75rem;
+  }
+
+  .messagesSection h2 {
+    font-size: 1.2rem;
+  }
+
+  .messageCard {
+    padding: 0.75rem;
+  }
+
+  .messageCard p {
+    font-size: 0.9rem;
+  }
+
+  .formInput {
+    font-size: 0.8rem;
+    color: #333333;
+  }
+
+  .submitButton,
+  .backButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Дуже малі екрани (до 480px) */
+@media (max-width: 480px) {
+  .adminPanel h1 {
+    font-size: 1.5rem;
+  }
+
+  .messagesSection h2 {
+    font-size: 1.1rem;
+  }
+
+  .messageCard p {
+    font-size: 0.8rem;
+  }
+
+  .formInput {
+    font-size: 0.75rem;
+    color: #333333;
+  }
+
+  .submitButton,
+  .backButton {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.75rem;
+  }
+}

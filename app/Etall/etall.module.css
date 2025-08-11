@@ -1,0 +1,21 @@
+.section{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.section h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.ctaButton{
+  display: inline-block;
+  background-color: #40c4ff; /* Блакитний */
+  color: #ffffff; /* Білий */
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: auto;
+}
